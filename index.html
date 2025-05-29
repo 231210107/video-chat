@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Video Chat App</title>
+  <style>
+    video {
+      width: 45%;
+      margin: 5px;
+      border: 2px solid #333;
+    }
+    #chat {
+      margin-top: 10px;
+    }
+    #messages {
+      height: 150px;
+      overflow-y: auto;
+      border: 1px solid #aaa;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Video Chat</h2>
+  <video id="localVideo" autoplay muted></video>
+  <video id="remoteVideo" autoplay></video>
+
+  <div id="chat">
+    <div id="messages"></div>
+    <input type="text" id="messageInput" placeholder="Type your message...">
+    <button onclick="sendMessage()">Send</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
