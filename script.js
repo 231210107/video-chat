@@ -1,6 +1,6 @@
 console.log("Script is running...");
 
-const ws = new WebSocket(`ws://${location.host}`);
+const ws = new WebSocket('wss://video-chat-backend-y3xk.onrender.com');
 const peer = new RTCPeerConnection();
 const localVideo = document.getElementById('localVideo');
 const remoteVideo = document.getElementById('remoteVideo');
